@@ -1,0 +1,18 @@
+a_dictionary:
+  a_key: a_value
+  another_key: another_value
+  nested_dictionary:
+    nested_key: nested_value
+
+a_list:
+  - an item
+  - another item
+  - 1.25
+  - a_key: a_value
+  -
+    - another list
+...
+a_yaml_file = open("example.yaml")
+parsed_yaml_file = yaml.load(a_yaml_file, Loader=yaml.FullLoader)
+
+print(parsed_yaml_file["a_dictionary"])
