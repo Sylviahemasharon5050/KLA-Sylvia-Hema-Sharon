@@ -1,0 +1,7 @@
+[tmp]$ python -c 'import yaml, sys; yaml.safe_load(sys.stdin)' < cfg.yaml
+[tmp]$ python -c 'import yaml, sys; yaml.safe_load(sys.stdin)' < cfg.yaml
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  ...
+could not find expected ':'
+  in "<stdin>", line 5, column 1
